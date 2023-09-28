@@ -11,7 +11,7 @@ Then User should see banner of hero( preferred ) products from consultant
 And User should see list of product categories that are available
 
 Scenario: User selects a consultant
-Given	User selects a product category from list
+Given User selects a product category from list
 When Consultant information is not available
 Then User should see product category items in the decreasing order of sale volume
 
@@ -39,7 +39,7 @@ And User should see reviews from other users
 
 Scenario: Selected product details are not available
 Given User selects a product
-When product details is not available
+When Product details is not available
 Then User should see an appropriate message indicating what is wrong
 And User should see next steps
 
@@ -52,7 +52,7 @@ And User should see related products
 Scenario: User selects a product into cart
 Given User is on a product page
 When User opts to put a product into their cart
-ThenUser should be notified that the product has been added to their cart
+Then User should be notified that the product has been added to their cart
 And The masthead should reflect number of unit that are in the cart
 And The masthead should show total value of cart
 
