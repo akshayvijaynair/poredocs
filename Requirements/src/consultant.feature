@@ -9,7 +9,7 @@ Given User selects a link provided from a consultant
 When User navigates into consultant page
 Then User should see option to book appointment with consultant
 And User should see banner of recommended products from consultant
-And	Should see recommended similar consultants
+And Should see recommended similar consultants
 
 Scenario: User selects a product category from the consultant profile page
 Given User selects a product category from list
