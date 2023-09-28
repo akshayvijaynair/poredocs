@@ -1,5 +1,5 @@
 Scenario: User navigates into consultant section
-Given	That a user is signed in
+Given That a user is signed in
 When a signed in user comes to the consult section
 Then should see list of consultants that are available
 And should see input field to enter in Consultant name(if any)
