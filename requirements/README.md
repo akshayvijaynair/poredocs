@@ -4,9 +4,9 @@
 	PACE University
 	2023-12-10
 
-!include[VERSION HISTORY](./CHANGELOG.md)
+[VERSION HISTORY](./CHANGELOG.md)
 
-Table of Contents
+## Table of Contents
 1. [Introduction](#1-introduction) 
    1. [Purpose](#11purpose) 
    2. [Document Conventions ](#12document-conventions) 
@@ -43,8 +43,6 @@ Table of Contents
 			
 
 ## 1. Introduction
-
-add abstract here
 
 ### 1.1	Purpose
 <Identify the product whose software requirements are specified in this document, including the revision or release number. Describe the scope of the product that is covered by this SRS, particularly if this SRS describes only part of the system or a single subsystem.>

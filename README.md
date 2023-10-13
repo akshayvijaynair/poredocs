@@ -8,4 +8,5 @@ The application will allow the consumer/user to use the integrated facial recogn
 ## Contents
     
   - [Requirements](/requirements/README.md)
+  - [Quality Factors](/quality-assurance/QUALITYFACTORS.md)
   - [Quality Assurance](/quality-assurance/README.md)
