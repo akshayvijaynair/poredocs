@@ -1,5 +1,5 @@
 # poredocs
-    This repository holds all the documentation regarding the Quality assurance plan for PORE: An application looking at holistic skin care digital solution provider
+This repository holds all the documentation regarding the Quality assurance plan for PORE: An application looking at holistic skin care digital solution provider
 
 ## Abstract
 
