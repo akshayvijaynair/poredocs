@@ -3,7 +3,9 @@
 	Prepared by Akshay V Nair
 	PACE University
 	2023-12-10
- 
+
+!include[VERSION HISTORY](./CHANGELOG.md)
+
 Table of Contents
 1. [Introduction](#1-introduction) 
    1. [Purpose](#11purpose) 
