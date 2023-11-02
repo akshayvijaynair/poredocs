@@ -6,7 +6,11 @@ This repository holds all the documentation regarding the Quality assurance plan
 The application will allow the consumer/user to use the integrated facial recognition software to get a high-quality and high accuracy skin analysis. Then that data will be sent forward to another section of the app which will be able to compute that data into recommending products for their skin
 
 ## Contents
-    
-  - [Requirements](/requirements/README.md)
+
   - [Quality Factors](/quality-assurance/QUALITYFACTORS.md)
   - [Quality Assurance](/quality-assurance/README.md)
+
+## Project Documentation
+- [Requirements](/requirements/README.md)
+- [Design](/design/README.md)
+- [Configuration](/configuration/README.md)
