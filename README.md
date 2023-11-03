@@ -7,10 +7,10 @@ The application will allow the consumer/user to use the integrated facial recogn
 
 ## Contents
 
-  - [Quality Factors](/quality-assurance/QUALITYFACTORS.md)
-  - [Quality Assurance](/quality-assurance/README.md)
+  - [Quality Factors](/quality-assurance/src/QUALITYFACTORS.md)
 
 ## Project Documentation
 - [Requirements](/requirements/README.md)
 - [Design](/design/README.md)
 - [Configuration](/configuration/README.md)
+- [Software Quality Assurance Plan](/quality-assurance/README.md)
