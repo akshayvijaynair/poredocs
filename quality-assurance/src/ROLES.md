@@ -57,4 +57,11 @@ The product owner is responsible for maintaining the product backlog. As the pro
 key role in identifying complications that slow the team significantly. Especially blocks that prevent development of a quality product or performance of any team member
   esclate the issue and priotize impediments with development and dellivey rrequirerments in mind
 
+### Protect Team from External Influennces 
+Key role in identifying factors that can impact team members ability to progress. Ensure the tasks are manageable, stress-free environment (product owner or other departments are not pushing team members beyond their capabilities in certain time constraints) etc. 
+
+### Teach and Coach
+Scrum master is responsible for teaching and coaching the team in areas that creating difficulties. Provide guidance on how to implement the taught method. 
+
+
 
