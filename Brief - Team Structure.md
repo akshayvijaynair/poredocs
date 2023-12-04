@@ -1,15 +1,15 @@
-Team Structure - Roles and Responsibilities defined. 
+# Team Structure - Roles and Responsibilities defined. 
 
 
 The application testing for "Pore" is being carried out by four team members currently. The four team members are: Akshay, Sujitha, Bala and Jamil.
 The team members cover different aspects of the application. The roles are respectively, Cloud AWS, Database and API, Front-End and Scrum Master. 
 This document will define the roles of each individual for clarity of their tasks and responsibility. 
 
-Akshay - Cloud AWS
+## Akshay - Cloud AWS
 
 Role: The Cloud (AWS) Tester ensures the reliability, scalability, and security of the "Pore" application in the AWS cloud environment.
 
-Responsibility: 
+### Responsibility: 
 
 Infrastructure Testing:
 Validate the deployment of application components in AWS, including load balancing, auto-scaling, and data storage.
@@ -28,11 +28,11 @@ Implement tools for continuous monitoring of the AWS infrastructure.
 Set up alerts for any anomalies or issues detected in real-time.
 
 
-Sujitha - Database and API
+## Sujitha - Database and API
 
 Role: The Database and API Tester ensures the integrity, security, and optimal performance of the database and API components of the "Pore" application.
 
-Responsibility:
+### Responsibility:
 
 Database Testing:
 Validate data integrity through comprehensive testing of CRUD operations.
@@ -50,11 +50,11 @@ Performance Optimization:
 Collaborate with the Cloud Tester to simulate and measure the performance of the database and API components.
 Optimize database queries and indexing for improved performance.
 
-Bala - Front-End
+## Sahithi - Front-End
 
 Role: The Front End Tester ensures the usability, functionality, and responsiveness of the user interface in the "Pore" application.
 
-Responsibility:
+### Responsibility:
 
 User Interface Testing:
 Test the functionality of each user interface component to ensure alignment with design specifications.
@@ -73,11 +73,11 @@ Develop and execute automated test scripts for repetitive front-end testing scen
 Collaborate with the Scrum Master to integrate automated testing into the continuous integration pipeline.
 
 
-Jamil - Scrum Master
+## Jamil - Scrum Master
 
 Role: The Scrum Master facilitates the agile development process, coordinates team activities, and ensures effective communication within the testing team.
 
-Responsibility:
+### Responsibility:
 
 Scrum Facilitation:
 Lead and facilitate daily stand-up meetings, sprint planning, and retrospective sessions.
