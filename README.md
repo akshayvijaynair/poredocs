@@ -14,4 +14,5 @@ The application will allow the consumer/user to use the integrated facial recogn
 - [Requirements](/requirements/README.md)
 - [Design](/design/README.md)
 - [Configuration](/configuration/README.md)
+- [Risk Management](/risk/README.md)
 - [Software Quality Assurance Plan](/quality-assurance/README.md)
