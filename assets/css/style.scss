@@ -1,0 +1,6 @@
+@import "{{ site.theme }}";
+
+nav {
+  max-height: 50vh;
+  overflow: auto;
+}
