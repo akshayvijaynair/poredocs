@@ -3,4 +3,4 @@ remote_theme: pages-themes/leap-day@v0.2.0
 plugins:
 - jekyll-remote-theme
 title: PORE | SE-677 | Documentation Site
-description: The application will allow the consumer/user to use the integrated facial recognition software to get a high-quality and high accuracy skin analysis. Then that data will be sent forward to another section of the app which will be able to compute that data into recommending products for their skin
+description: Documentation site for quality assurance for a skin care iOS application
