@@ -4,3 +4,4 @@ plugins:
 - jekyll-remote-theme
 title: PORE | SE-677 | Documentation Site
 description: Documentation site for quality assurance for a skin care iOS application
+show_downloads: true
