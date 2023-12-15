@@ -1,4 +1,4 @@
-# SE 677 | Software Quality and Reliability | PORE DOCUMENTATION
+# PORE | SE-677
 This repository holds all the documentation regarding the Quality assurance plan for PORE: An application looking at holistic skin care digital solution provider
 
 ## Abstract
