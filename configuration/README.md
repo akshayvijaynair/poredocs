@@ -7,54 +7,54 @@
 
 ## Contents
 
-1. [Overview 6](#1-overview)
-    1. [Project Background 6](#11-project-background)
-    2. [Purpose and Scope 6](#12-purpose-and-scope)
-    3. [Assumptions/Constraints 6](#13-assumptionsconstraints)
-    4. [Roles and Responsibilities 6](#14-roles-and-responsibilities)
+1. [Overview](#1-overview)
+    1. [Project Background](#11-project-background)
+    2. [Purpose and Scope](#12-purpose-and-scope)
+    3. [Assumptions/Constraints](#13-assumptionsconstraints)
+    4. [Roles and Responsibilities](#14-roles-and-responsibilities)
 
-2. [Configuration Management Strategy 7](#2-configuration-management-strategy)
-    1. [Configuration Management Strategy Overview 7](#21-configuration-management-strategy-overview)
-    2. [Documentation Repositories 7](#22-documentation-repositories)
-    3. [Technical Environments 7](#23-technical-environments)
-    4. [Development Environment 7](#24-development-environment)
-        1. [Test Environment 7](#241-test-environment)
-        2. [Training Environment 7](#242-training-environment)
-        3. [Pre-Production Environment 7](#243-pre-production-environment)
-        4. [Production Environment 7](#244-production-environment)
-        5. [Roles and Responsibilities for Environment Management 7](#245-roles-and-responsibilities-for-environment-management)
-        6. [Tools Used for Environment Management 8](#246-tools-used-for-environment-management)
-        7. [Environment Access 8](#247-environment-access)
-        8. [Environment Schedule 8](#248-environment-schedule)
-        9. [Environment Maintenance 8](#249-environment-maintenance)
+2. [Configuration Management Strategy](#2-configuration-management-strategy)
+    1. [Configuration Management Strategy Overview](#21-configuration-management-strategy-overview)
+    2. [Documentation Repositories](#22-documentation-repositories)
+    3. [Technical Environments](#23-technical-environments)
+    4. [Development Environment](#24-development-environment)
+        1. [Test Environment](#241-test-environment)
+        2. [Training Environment](#242-training-environment)
+        3. [Pre-Production Environment](#243-pre-production-environment)
+        4. [Production Environment ](#244-production-environment)
+        5. [Roles and Responsibilities for Environment Management](#245-roles-and-responsibilities-for-environment-management)
+        6. [Tools Used for Environment Management](#246-tools-used-for-environment-management)
+        7. [Environment Access](#247-environment-access)
+        8. [Environment Schedule](#248-environment-schedule)
+        9. [Environment Maintenance](#249-environment-maintenance)
 
-3. [Configuration Items 9](#3-configuration-items)
-    1. [Configurable Item Identification and Management 9](#31-configurable-item-identification-and-management)
-        1. [Configuration Item Class: Documentation 9](#311-configuration-item-class-documentation)
-        2. [Configuration Item Class: Software / Code 9](#312-configuration-item-class-software-code)
-        3. [Infrastructure Configuration Items 10](#313-infrastructure-configuration-items)
-        4. [Interface Configuration Items 10](#314-interface-configuration-items)
-        5. [Database Configuration Items 10](#315-database-configuration-items)
+3. [Configuration Items](#3-configuration-items)
+    1. [Configurable Item Identification and Management](#31-configurable-item-identification-and-management)
+        1. [Configuration Item Class: Documentation](#311-configuration-item-class-documentation)
+        2. [Configuration Item Class: Software / Code](#312-configuration-item-class-software-code)
+        3. [Infrastructure Configuration Items](#313-infrastructure-configuration-items)
+        4. [Interface Configuration Items](#314-interface-configuration-items)
+        5. [Database Configuration Items](#315-database-configuration-items)
 
-4. [Configuration Management System 11](#4-configuration-management-system)
-    1. [Change Management 11](#41-change-management)
-    2. [Documentation Configuration Management System 11](#42-documentation-configuration-management-system)
-    3. [Software / Code Configuration Management 11](#43-software-code-configuration-management)
-    4. [Infrastructure Configuration Management 12](#44-infrastructure-configuration-management)
-    5. [Interface Configuration Management 12](#45-interface-configuration-management)
-    6. [Database Configuration Management 12](#46-database-configuration-management)
-    7. [Library Configuration Management 13](#47-library-configuration-management)
+4. [Configuration Management System](#4-configuration-management-system)
+    1. [Change Management](#41-change-management)
+    2. [Documentation Configuration Management System](#42-documentation-configuration-management-system)
+    3. [Software / Code Configuration Management](#43-software-code-configuration-management)
+    4. [Infrastructure Configuration Management](#44-infrastructure-configuration-management)
+    5. [Interface Configuration Management](#45-interface-configuration-management)
+    6. [Database Configuration Management](#46-database-configuration-management)
+    7. [Library Configuration Management](#47-library-configuration-management)
 
-5. [CM Plan Maintenance 14](#5-cm-plan-maintenance)
+5. [CM Plan Maintenance](#5-cm-plan-maintenance)
 
-6. [Configuration Management Automation Support 15](#6-configuration-management-automation-support)
-    1. [Automated Tools 15](#61-automated-tools)
-    2. [Work Space Management 15](#62-work-space-management)
-    3. [Build Management 15](#63-build-management)
+6. [Configuration Management Automation Support](#6-configuration-management-automation-support)
+    1. [Automated Tools](#61-automated-tools)
+    2. [Work Space Management](#62-work-space-management)
+    3. [Build Management](#63-build-management)
 
 Appendix:
-- [Appendix A: Key References 16](#appendix-a-key-references)
-- [Appendix B: Key Terms 16](#appendix-b-key-terms)
+- [Appendix A: Key References](#appendix-a-key-references)
+- [Appendix B: Key Terms](#appendix-b-key-terms)
 
 ##  1. Overview
 
@@ -65,8 +65,6 @@ Appendix:
 _\<\< Provide a brief description of this project, including the purpose of the new or modified system, the functions it will perform, and the business processes that the system is intended to support. Also, describe the business need and benefits of the new capability and aligns the new capability with strategic goals and mission objectives or Federal legislative requirements. \>\>_
 
 ####  1.2 Purpose and Scope
-
-\<\< Describe the purpose and objectives of the Configuration Management Plan. Suggested text is provided below.
 
 The Configuration Management Plan establishes uniform CM practices for managing system software, hardware, and documentation changes throughout the lifecycle. Specifically, the CM Plan:
 

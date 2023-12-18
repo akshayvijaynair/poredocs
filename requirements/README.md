@@ -26,9 +26,13 @@
    2. [Hardware Interfaces](#32hardware-interfaces) 
    3. [Software Interfaces](#33software-interfaces) 
    4. [Communications Interfaces](#34communications-interfaces) 
-4. [System Features](#4-system-features) 
-   1. [System Feature ](#41system-feature-1) 1
-   2. [System Feature ](#42system-feature-2-and-so-on) 2 (and so on)
+4. [System Features](#4-system-features)
+   1. [Feature: Sign up](#41feature-sign-up)
+   2. [Feature: User profile](#42feature-user-profile)
+   3. [Feature: Consultant](#43feature-consultant)
+   4. [Feature: Marketplace](#44feature-marketplace)
+   5. [Feature: Routine](#45feature-routine)
+   6. [Feature: Track User Progress](#46feature-track-user-progress)
 5. [Other Nonfunctional Requirements](#5-other-nonfunctional-requirements )  
    1. [Performance Requirements](#51performance-requirements) 
    2. [Safety Requirements](#52safety-requirements) 
@@ -45,9 +49,9 @@
 ## 1. Introduction
 
 ### 1.1	Purpose
-<Identify the product whose software requirements are specified in this document, including the revision or release number. Describe the scope of the product that is covered by this SRS, particularly if this SRS describes only part of the system or a single subsystem.>
+This document covers the requirement documentation patterns and practices follow by the PORE team. It aims to concisely explain the requirements of the quality assurance team and their scope in the product delivery pipeline.
 ### 1.2	Document Conventions
-<Describe any standards or typographical conventions that were followed when writing this SRS, such as fonts or highlighting that have special significance. For example, state whether priorities  for higher-level requirements are assumed to be inherited by detailed requirements, or whether every requirement statement is to have its own priority.>
+All requirements in the r
 ### 1.3	Intended Audience and Reading Suggestions
 <Describe the different types of reader that the document is intended for, such as developers, project managers, marketing staff, users, testers, and documentation writers. Describe what the rest of this SRS contains and how it is organized. Suggest a sequence for reading the document, beginning with the overview sections and proceeding through the sections that are most pertinent to each reader type.>
 ### 1.4	Product Scope
@@ -57,11 +61,15 @@
 
 ## 2. Overall Description
 ### 2.1	Product Perspective
-<Describe the context and origin of the product being specified in this SRS. For example, state whether this product is a follow-on member of a product family, a replacement for certain existing systems, or a new, self-contained product. If the SRS defines a component of a larger system, relate the requirements of the larger system to the functionality of this software and identify interfaces between the two. A simple diagram that shows the major components of the overall system, subsystem interconnections, and external interfaces can be helpful.>
+The application will allow the consumer/user to use the integrated facial recognition software to get a high-quality and high accuracy skin analysis. Then that data will be sent forward to another section of the app which will be able to compute that data into recommending products for their skin
 ### 2.2	Product Functions
-<Summarize the major functions the product must perform or must let the user perform. Details will be provided in Section 3, so only a high level summary (such as a bullet list) is needed here. Organize the functions to make them understandable to any reader of the SRS. A picture of the major groups of related requirements and how they relate, such as a top level data flow diagram or object class diagram, is often effective.>
+The product has 3 major functions:
+1. It will give user a digital market for skin care solution. It will do that via ability to interact with consultants, and have access to a custom e-commerce space that will tailor the product recommendations to the users profile.
+2. It will offer user a routine for better skin care
+3. It will also offer users the ability to track their progress
 ### 2.3	User Classes and Characteristics
-<Identify the various user classes that you anticipate will use this product. User classes may be differentiated based on frequency of use, subset of product functions used, technical expertise, security or privilege levels, educational level, or experience. Describe the pertinent characteristics of each user class. Certain requirements may pertain only to certain user classes. Distinguish the most important user classes for this product from those who are less important to satisfy.>
+1. Normal User: any user that is able to book appoint
+2. Consultant: will be able to 
 ### 2.4	Operating Environment
 <Describe the environment in which the software will operate, including the hardware platform, operating system and versions, and any other software components or applications with which it must peacefully coexist.>
 ### 2.5	Design and Implementation Constraints
@@ -73,30 +81,361 @@
 
 ## 3. External Interface Requirements
 ### 3.1	User Interfaces
-<Describe the logical characteristics of each interface between the software product and the users. This may include sample screen images, any GUI standards or product family style guides that are to be followed, screen layout constraints, standard buttons and functions (e.g., help) that will appear on every screen, keyboard shortcuts, error message display standards, and so on. Define the software components for which a user interface is needed. Details of the user interface design should be documented in a separate user interface specification.>
+This application is being for an mobile app for iOS based systems.
 ### 3.2	Hardware Interfaces
-<Describe the logical and physical characteristics of each interface between the software product and the hardware components of the system. This may include the supported device types, the nature of the data and control interactions between the software and the hardware, and communication protocols to be used.>
+At its current scope the hardware is limited to iPhones and iPad devices supporting minimum iOS 16
 ### 3.3	Software Interfaces
-<Describe the connections between this product and other specific software components (name and version), including databases, operating systems, tools, libraries, and integrated commercial components. Identify the data items or messages coming into the system and going out and describe the purpose of each. Describe the services needed and the nature of communications. Refer to documents that describe detailed application programming interface protocols. Identify data that will be shared across software components. If the data sharing mechanism must be implemented in a specific way (for example, use of a global data area in a multitasking operating system), specify this as an implementation constraint.>
+The app will interface with internally developed APIs and externally developed API to fulfil it's functionality.
 ### 3.4	Communications Interfaces
-<Describe the requirements associated with any communications functions required by this product, including e-mail, web browser, network server communications protocols, electronic forms, and so on. Define any pertinent message formatting. Identify any communication standards that will be used, such as FTP or HTTP. Specify any communication security or encryption issues, data transfer rates, and synchronization mechanisms.>
+The app will communicate with user with email, SMS, and app notifications.
 
 ## 4. System Features
-<This template illustrates organizing the functional requirements for the product by system features, the major services provided by the product. You may prefer to organize this section by use case, mode of operation, user class, object class, functional hierarchy, or combinations of these, whatever makes the most logical sense for your product.>
-### 4.1	System Feature 1
+All system requirements and functional requirements will be document in gherkin syntax. A brief summary of the syntax is as below:
+
+```gherkin
+Scenario: [Actor] [Trigger]
+Given [Actor] [Pre-condition #]
+When [Actor] [Action #]
+Then [Actor] [Post-condition]
+And  [Post-condition #2]
+```
+### 4.1	Feature: Sign up
 <Don’t really say “System Feature 1.” State the feature name in just a few words.>
-### 4.1.1	Description and Priority
-	<Provide a short description of the feature and indicate whether it is of High, Medium, or Low priority. You could also include specific priority component ratings, such as benefit, penalty, cost, and risk (each rated on a relative scale from a low of 1 to a high of 9).>
-### 4.1.2	Stimulus/Response Sequences
-	<List the sequences of user actions and system responses that stimulate the behavior defined for this feature. These will correspond to the dialog elements associated with use cases.>
-### 4.1.3	Functional Requirements
-	<Itemize the detailed functional requirements associated with this feature. These are the software capabilities that must be present in order for the user to carry out the services provided by the feature, or to execute the use case. Include how the product should respond to anticipated error conditions or invalid inputs. Requirements should be concise, complete, unambiguous, verifiable, and necessary. Use “TBD” as a placeholder to indicate when necessary information is not yet available.>
-	
-	<Each requirement should be uniquely identified with a sequence number or a meaningful tag of some kind.>
-	
-REQ-1:	
-REQ-2:	
-### 4.2	System Feature 2 (and so on)
+````gherkin
+# New user can come to sign up page
+Scenario: User has come to sign up page
+Given that the user is new( How do you know?)
+When the user lands on the sign up page
+Then user should see sign up form
+
+Scenario: User is attempted to fill in username field
+Given that the user is attempting to sign up
+When the user enters a username
+Then system must check for uniqueness
+And should show error when check fails
+
+Scenario: User is attempted to fill in username field
+Given that the user is attempting to sign up
+When the user enters a username
+Then system must check for uniqueness
+And should take user to next field if check passes
+And it should show that the username is available
+
+
+Scenario: User has come to password field
+Given that the user is attempting to create password
+When the user enters the password
+Then system should check that it has at least 8 characters
+And minimum 1 capital letter
+And use of at least one special character
+And use of at least one number
+
+Scenario: User has entered a password
+Given the password is missing a requirement
+Then the user is shown a generic error
+And the failed check should be highlighted
+
+Scenario: User performs OTP Validation
+Given User has provided valid username and password
+Then User is prompted to enter in their email
+And email is validated for format
+````
+### 4.2	Feature: User profile
+```gherkin
+
+Scenario: User Completes Skin Survey
+Given the user is on the skincare survey page
+When the user fills in survey
+And the user submits the survey
+Then the app should process the user's responses
+And the user should see a list of recommended skincare products
+
+Scenario: User Skips Questions
+Given the user is on the skincare survey page
+When the user skips answering some questions
+And the user submits the survey
+Then the app should display an error message indicating incomplete answers
+
+Scenario: User Receives No Recommendations
+Given the user is on the skincare survey page
+When the user answers the questions with neutral or no specific concerns
+And the user submits the survey
+Then the app should display a message indicating no specific product recommendations
+
+Scenario: User Receives Product recommendation based on survey inputs
+Given the user has received skincare product recommendations
+When the user views the recommended products
+Then the app should display the products in the recommended usage order
+
+Scenario: User Clicks on a Recommended Product
+Given the user has received skincare product recommendations
+When the user clicks on a recommended product
+Then the app should navigate to the product details page
+And the user should see detailed information about the selected product
+
+Scenario: User Clears Survey Results
+Given the user has completed the survey and received product recommendations
+When the user clears the survey results
+Then the app should reset the user's survey responses
+And the user should see a message indicating the survey has been cleared
+
+Scenario: Survey Data Validation
+Given the user is on the skincare survey page
+When the user enters invalid data or exceeds character limits in the survey
+And the user submits the survey
+Then the app should display error messages next to the respective questions
+
+Scenario: User Logs In
+Given the user is on the app's login page
+When the user logs in with valid credentials
+Then the app should redirect to their user profile
+And resubmits certain questions from the survey on their profile
+And the input meet requirements
+And profile is updated
+And page refreshes to show new recommendations
+
+Scenario: User Profile
+Given the user is logged in
+When the user accesses their profile
+Then the app should display the user's information and preferences
+
+Scenario: User Updates Profile
+Given the user is logged in
+When the user updates their profile information
+Then the app should save the changes and display a success message
+
+Scenario: User Provides Feedback
+Given the user is using the app
+When the user wishes to provide feedback
+Then the app should allow the user to submit feedback with comments and suggestions
+
+```
+
+### 4.3	Feature: Consultant
+```gherkin
+Scenario: User navigates into consultant section
+Given User is signed in
+When User comes to the consult section
+Then User should see list of consultants that are available
+And User should see input field to enter in Consultant name(if any)
+
+Scenario: User navigates into consultant profile page
+Given User selects a link provided from a consultant
+When User navigates into consultant page
+Then User should see option to book appointment with consultant
+And User should see banner of recommended products from consultant
+And Should see recommended similar consultants
+
+Scenario: User selects a product category from the consultant profile page
+Given User selects a product category from list
+When Consultant information is not available
+Then User should see product category items in the decreasing order of sale volume
+
+Scenario: User selects a consultant sub-category (specializations)
+Given User selects a consultant category from list
+When Consultant information is available
+When There are active filters based on Name, Consultation charges, or Location
+Then User sees list of consultants based on those filters
+
+Scenario: Consultant list is not available
+Given User searches for a product
+When List is not available
+Then User should see an appropriate message indicating what is wrong
+And User should see next steps
+
+Scenario: Product is selected
+Given User searches for a product
+When List is available
+And User selects a product
+Then User should see all product details
+And User should see product is recommended by which consultants
+And User should see option to add product in their cart
+And User should see option to add in more than one unit in their cart
+And User should see reviews from other users
+
+Scenario: consultant details are not available
+Given User selects a consultant
+When Consultant details is not available
+Then User should see an appropriate message indicating what is wrong
+And User should see next steps
+
+Scenario: User selects a consultant
+Given User is on a product page
+When User opts to book with a consultant
+Then User should be notified that the consultant has been notified
+And User should be navigated to booking and history page
+
+#(Possible miss from features: Booking and History)
+#(Possible miss: waiting room/ digital reception - in case of virtual appointments)
+
+```
+
+### 4.4	Feature: Marketplace
+```gherkin
+Scenario: User navigates into consult section
+Given User is signed in
+When User comes to the consult section
+Then User should see list of specializations that are available
+And  User should see input field to enter in Consultant name(if any)
+
+Scenario: User navigates into consult page with provided link from consultant
+Given User selects a link provided from a consultant
+When User navigates into marketplace
+Then User should see banner of hero( preferred ) products from consultant
+And User should see list of product categories that are available
+
+Scenario: User selects a consultant
+Given User selects a product category from list
+When Consultant information is not available
+Then User should see product category items in the decreasing order of sale volume
+
+Scenario: User selects a consultant
+Given User selects a product category from list
+When Consultant information is available
+Then User should see consultant affiliated links first
+And User should see list of products in decreasing order of sale volume
+
+Scenario: Product category list is not available
+Given User searches for a product
+When the list is not available
+Then User should see an appropriate message indicating what is wrong
+And  User should see next steps
+
+Scenario: Product is selected
+Given User searches for a product
+When List is available
+And User selects a product
+Then User should see all product details
+And User should see product is recommended by which consultants
+And User should see option to add product in their cart
+And User should see option to add in more than one unit in their cart
+And User should see reviews from other users
+
+Scenario: Selected product details are not available
+Given User selects a product
+When Product details is not available
+Then User should see an appropriate message indicating what is wrong
+And User should see next steps
+
+Scenario: Selected product is out of stock
+Given User selects a product
+When Product details are available
+Then User should see an appropriate message indicating product is out of stock
+And User should see related products
+
+Scenario: User selects a product into cart
+Given User is on a product page
+When User opts to put a product into their cart
+Then User should be notified that the product has been added to their cart
+And The masthead should reflect number of unit that are in the cart
+And The masthead should show total value of cart
+
+# (Possible miss from features: Billing and Checkout) -> Goes in Security Feature from here
+
+```
+
+### 4.5	Feature: Routine
+```gherkin
+Scenario: User requests a skincare routine
+Given the user is logged into the app
+When the user navigates to the "Skincare Routines" section
+Then they should see an option to "Generate Routine with Info Videos"
+When the user selects the "Generate Routine with Info Videos" option
+Then the app should generate a skincare routine for the user
+And the routine should include a sequence of recommended products
+
+Scenario: User receives a skincare routine with video tutorials
+Given the user is logged into the app
+When the user generates a skincare routine with Info Videos
+Then the routine should include video tutorials for each recommended product
+And the videos should provide instructions on how to use the products
+And the videos should be accessible from within the app
+
+Scenario: User follows the skincare routine
+Given the user is logged into the app
+And the user has generated a skincare routine with Info Videos
+When the user goes to their skincare routine
+Then they should see a step-by-step guide on how to use the recommended products
+And they should be able to access video tutorials for each step
+When the user follows the routine and uses the products
+Then they should be able to mark each step as completed
+
+Scenario: User seeks help with skincare routine
+Given the user is logged into the app
+And the user has generated a skincare routine with Info Videos
+When the user requires assistance with using a product
+Then they should be able to access the corresponding video tutorial
+And they should have the option to contact customer support for further assistance
+
+Scenario: User receives updated skincare routine with new videos
+Given the user is logged into the app
+And the user has previously generated a skincare routine with Info Videos
+When new video tutorials become available for the recommended products
+Then the app should automatically update the user's skincare routine
+And the updated routine should include the new video tutorials
+
+Scenario: User customizes their skincare routine
+Given the user is logged into the app
+And the user has generated a skincare routine with Info Videos
+When the user wants to modify their routine by adding or removing products
+Then they should have the option to customize the routine
+And the app should update the routine and associated videos accordingly
+
+Scenario: User schedules reminders for their skincare routine
+Given the user is logged into the app
+And the user has generated a skincare routine with Info Videos
+When the user wants to set up reminders for each step of the routine
+Then they should be able to schedule reminders for using the recommended products
+And the app should send notifications at the scheduled times
+
+Scenario: User tracks progress and results
+Given the user is logged into the app
+And the user has generated a skincare routine with Info Videos
+When the user uses the recommended products over time
+Then they should be able to track their progress and any visible results
+And the app should provide insights and recommendations based on the user's progress
+
+```
+
+### 4.6	Feature: Track User Progress
+```gherkin
+Scenario: User captures a weekly photo for skin analysis
+Given the user is logged in
+When the user selects to capture a weekly photo
+And follows the guidelines for good lighting
+And submits the photo
+Then the application should confirm successful photo submission
+And store the photo securely for analysis
+
+Scenario: User captures a bi-weekly photo for skin analysis
+Given the user is logged in
+When the user selects to capture a bi-weekly photo
+And follows the guidelines for good lighting
+And submits the photo
+Then the application should confirm successful photo submission
+And store the photo securely for analysis
+
+Scenario: User views skin analysis progress
+Given the user has submitted multiple photos for analysis
+When the user checks their skin analysis progress
+Then the application should display the user's improvement over time
+
+Scenario: User receives reminders for photo capture
+Given the user has opted to receive reminders
+When it's time to capture a weekly or bi-weekly photo
+Then the application should send a reminder to the user
+
+Scenario: User captures a photo with poor lighting
+Given the user is capturing a photo
+When the user captures a photo with inadequate lighting
+Then the application should show an error message about poor lighting
+
+Scenario: User cancels photo capture
+Given the user is capturing a photo
+When the user decides to cancel the operation
+Then the application should return the user to the main screen without saving the             photo
+
+```
 
 ## 5. Other Nonfunctional Requirements
 ### 5.1	Performance Requirements

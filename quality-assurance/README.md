@@ -66,7 +66,7 @@ Quality Assurance plays a pivotal role in ensuring the reliability, functionalit
 
 ## X. Team Collaboration
 - Establish guidelines for communication within the team.
-- Define roles and responsibilities related to QA. - [Project Roles](/src/ROLES.md)
+- Define roles and responsibilities related to QA. - [Project Roles](/ROLES.md)
 
 ## XI. Scaling Efforts
 - Provide guidelines for onboarding new team members.

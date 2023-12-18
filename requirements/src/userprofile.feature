@@ -1,3 +1,5 @@
+Feature: User profile
+
 Scenario: User Completes Skin Survey
 Given the user is on the skincare survey page
 When the user fills in survey
