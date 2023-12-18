@@ -1,9 +1,9 @@
-# Configuration management plan
+# Processes
 
-	Version 0.1
+	Version 1.0
 	Prepared by Akshay V Nair
 	PACE University
-	2023-02-11
+	2023-12-18
 
 ## Contents
 
