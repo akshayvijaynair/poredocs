@@ -6,17 +6,15 @@
 3. [QA Strategy](#ii-qa-strategy)
 4. [Testing Scope](#iii-testing-scope)
 5. [Test Environment](#iv-test-environment)
-6. [Test Data](#v-test-data)
+6. [Test Tooling](#v-test-tooling)
 7. [Test Cases](#vi-test-cases)
-8. [Test Execution](#vii-test-execution)
-9. [Defect Tracking](#viii-defect-tracking)
-10. [Continuous Integration/Continuous Deployment (CI/CD)](#ix-continuous-integrationcontinuous-deployment-cicd)
-11. [Team Collaboration](#x-team-collaboration)
-12. [Scaling Efforts](#xi-scaling-efforts)
-13. [Quality Metrics](#xii-quality-metrics)
-14. [Conclusion](#xiii-conclusion)
-15. [Appendices](#xiv-appendices)
-
+8. [Defect Tracking](#vii-defect-tracking)
+9. [Continuous Integration/Continuous Deployment (CI/CD)](#viii-continuous-integrationcontinuous-deployment-cicd)
+10. [Team Collaboration](#ix-team-collaboration)
+11. [Scaling Efforts](#x-scaling-efforts)
+12. [Quality Metrics](#xi-quality-metrics)
+13. [Conclusion](#xii-conclusion)
+14. [Appendices](#xiii-appendices)
 
 ## I. Introduction
 ### Overview 
@@ -56,8 +54,36 @@ Quality Assurance plays a pivotal role in ensuring the reliability, functionalit
 - Outline the testing levels (unit, integration, system, acceptance).
 
 ## III. Testing Scope
-- Specify the features and functionalities to be tested.
-- Identify any specific areas of focus (e.g., image analysis, user-professional interaction, marketplace functionality).
+### i) Unit Testing for Beauty Features:
+Developers write XCTest unit tests to validate specific functions, such as beauty filter algorithms or image processing for makeup applications.
+
+### ii) UI Testing for Beauty UI Elements:
+XCUITest scripts simulate user interactions with beauty-specific UI elements, ensuring they respond appropriately and maintain visual integrity.
+
+### iii) Visual Regression Testing for Aesthetics:
+Employ visual regression testing tools to capture baseline aesthetics and detect unintended visual changes in beauty filters or interface elements.
+
+### iv) Performance Testing for Image Processing:
+Use Xcode Instruments to profile performance, focusing on optimizing image processing speed for beauty enhancements.
+
+### v) Accessibility Testing for Inclusivity:
+Leverage the Accessibility Inspector to guarantee that beauty features are accessible to all users, including those relying on accessibility features.
+
+### vi) Continuous Integration with Beauty Focus:
+Integrate Fastlane into the CI/CD pipeline, automating tests for beauty features to maintain consistency and reliability across different builds.
+
+### vii) Beta Testing for Real-World Evaluation:
+Fastlane facilitates beta releases, allowing testers to evaluate beauty features like augmented reality makeup or skincare simulations in diverse real-world scenarios.
+
+### viii) End-to-End Testing for User Journeys:
+Design end-to-end testing scenarios that span the complete user journey, ensuring beauty features work seamlessly across different screens and user interactions.
+
+### ix) User Feedback Integration for Iterative Improvement:
+Implement analytics tools to collect user feedback on beauty features, informing iterative improvements for an enhanced user experience.
+
+### x) Final Release Assurance:
+Prior to the final release, employ Fastlane to automate the deployment process, conducting a final round of tests to ensure the beauty application is ready for public access with high-quality aesthetics and functionality.
+
 
 ## IV. Test Environment
 - MacOS systems for local level testing, Mac Virtual Machines for cloud based testing
@@ -65,27 +91,32 @@ Quality Assurance plays a pivotal role in ensuring the reliability, functionalit
 - Fastlane will be utilized as a mechanism to automate testing and deployment process
   - https://fastlane.tools/
 - All tests will be executed at the PR level
+- Additional details at the platform and infrastructure testing page: [platform and infra page](/PLATFORM_AND_INFRA_TESTING.md)
 
-## V. Test Data
-- Outline the types of test data needed for different scenarios.
-- Ensure sensitive user information is anonymized.
+## V. Test Tooling
+### 1. Xcode:
+Xcode serves as the central hub for iOS beauty application development and testing. Developers utilize its Interface Builder to craft visually captivating user interfaces for beauty features. During testing, Xcode's simulator allows for real-time validation of UI responsiveness and aesthetics across various iOS devices, ensuring a seamless user experience.
+
+### 2. XCTest/XCUITest:
+XCTest is harnessed for writing unit tests, scrutinizing the functionality of specific code segments in the beauty app. Meanwhile, XCUITest extends testing to the UI, where automated scripts simulate user interactions—critical for assessing the correct implementation of beauty-centric features, such as virtual makeup or skin tone adjustments.
+
+### 3. Fastlane:
+Fastlane streamlines the testing and deployment processes for beauty applications. It automates repetitive tasks, ensuring that the app's aesthetics and features remain intact throughout the testing pipeline. Fastlane's integrations facilitate beta testing, allowing stakeholders to evaluate beauty features in a real-world environment before the final release.
+
+Additional details can be found here:[testing and tooling page](/TESTING_AND_TOOLING.md)
+
 
 ## VI. Test Cases
-- Create detailed test cases for each feature.
-- Include positive and negative test scenarios.
-- Note any dependencies between test cases.
+- Front end testing: [front end testing page](/FRONT_END_TESTING.md)
+- API testing:[api testing page](/API_TESTING.md)
+- DB testing: [database testing page](/DATABASE_TESTING.md)
 
-## VII. Test Execution
-- Describe the testing process.
-- Specify the frequency of test runs.
-- Detail who will be responsible for executing tests.
 
-## VIII. Defect Tracking
-- Explain the process for logging and tracking defects.
-- Define severity and priority levels for different issues.
+## VII. Defect Tracking
 - Integrate GitHub Issues for defect tracking.
+- Define severity and priority levels for different issues.
 
-## IX. Continuous Integration/Continuous Deployment (CI/CD)
+## VIII. Continuous Integration/Continuous Deployment (CI/CD)
 - Detail the CI/CD pipeline setup
   - All relevant tests will be executed at the PR, when code is being opened for review
   ![image](../assets/images/PR.png)
@@ -96,7 +127,7 @@ Quality Assurance plays a pivotal role in ensuring the reliability, functionalit
   - Once the PR is merged, it should trigger another action to build and deploy the code
   ![image](../assets/images/Github%20Actions.png)
 
-## X. Team Collaboration
+## IX. Team Collaboration
 - Establish guidelines for communication within the team
   - All communications related to the project should be documented at the repo discussions page
   ![image](../assets/images/Discussions.png)
@@ -104,24 +135,24 @@ Quality Assurance plays a pivotal role in ensuring the reliability, functionalit
 - All project goals should have predefined goals and deadlines marked out
 ![image](../assets/images/Gantt%20Chart.png)
 
-## XI. Scaling Efforts
+## X. Scaling Efforts
 - Provide guidelines for onboarding new team members - 
   - All hiring and team member expectations are defined here: [Project Roles](/ROLES.md)
 - Document procedures for scaling QA efforts as the team grows
   - All change management should be start at the github discussions page, which after conclusively proving a need, should be converted into an issue
   ![image](../assets/images/Change%20Management.png)
 
-## XII. Quality Metrics
+## XI. Quality Metrics
 - We are adopting DORA as a metric to understand our code quality :  https://dora.dev/research/
   ![image](../assets/images/DORA.png)
 
 
-## XIII. Conclusion
+## XII. Conclusion
 - Quality in a domain that revolves around user health requires a high rate of accuracy. As from the risk modelling, we understand that there is inherent harm from false data, incorrect advice from consultants, legal liabilities from losing private user data.
 - Therefore, the practises established above and adherence to the above should allow the team to ensure a high quality app, whilst also greatly reducing risks to users
 
 - While this document does establish the use of the latest and greatest practises in the app development space, it is encouraged to keep looking at new tools and processes that come in that could be adopted in this project.
 
-## XIV. Appendices
+## XIII. Appendices
 - https://docs.github.com/en
 - https://docs.fastlane.tools/

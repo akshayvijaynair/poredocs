@@ -18,4 +18,11 @@ The application will allow the consumer/user to use the integrated facial recogn
 ### [Cost Of Software Quality](/cosq/README.md)
   - This section provides an estimate of the cost to develop this application within a year. Its estimates are assuming 2 contract teams rather than a bootstrapped team.
 ### [Software Quality Assurance Plan](/quality-assurance/README.md)
- - This is the overall Software Quality Assurance Plan
+ - This is the overall Software Quality Assurance Plan. It consists of
+   - Team Structure
+   - Roles and Responsibilities
+   - CI/CD Setup
+   - Documentation guidelines
+   - Collabaration guidelines, and of course
+   - Testing guidelines
+   - 
