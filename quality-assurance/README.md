@@ -117,8 +117,10 @@ Quality Assurance plays a pivotal role in ensuring the reliability, functionalit
 
 
 ## XIII. Conclusion
-- Summarize the importance of QA in ensuring a high-quality skincare application.
-- Encourage continuous improvement and learning.
+- Quality in a domain that revolves around user health requires a high rate of accuracy. As from the risk modelling, we understand that there is inherent harm from false data, incorrect advice from consultants, legal liabilities from losing private user data.
+- Therefore, the practises established above and adherence to the above should allow the team to ensure a high quality app, whilst also greatly reducing risks to users
+
+- While this document does establish the use of the latest and greatest practises in the app development space, it is encouraged to keep looking at new tools and processes that come in that could be adopted in this project.
 
 ## XIV. Appendices
 - https://docs.github.com/en
