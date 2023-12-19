@@ -9,7 +9,7 @@ The application will allow the consumer/user to use the integrated facial recogn
 ## Project Documentation
 ### [Requirements](/requirements/README.md)
   - This section will speak to our requirements and practises around requirement documentation
-### [Quality Factors](/quality-assurance/QUALITYFACTORS.md)
+### [Quality Factors](/QUALITYFACTORS.md)
   - This section documents all the quality attributes we'd need to achieve a high quality
 ### [Team Structure](/quality-assurance/ROLES.md)
   - This section speaks to the teams involved in the development and quality assurance of the product. It will cover the team structure, their roles and responsibilities.
