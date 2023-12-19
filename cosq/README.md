@@ -8,3 +8,7 @@
 | D           | ~$400,000 - ~$700,000     | > $1,000,000               | > $2,000,000         |
 
 
+## Assumption
+
+1. Salary Estimates - Based on median costs of iOS developers in the US market, since they would form the bulk of the teams
+2. Fixed Estimates - Cost of Github hosting, Github Actions, Hardware and Tooling Support for developers 

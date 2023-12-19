@@ -1,8 +1,8 @@
 # Software Requirements Specification for PORE
-	Version 0.1
+	Version 0.9
 	Prepared by Akshay V Nair
 	PACE University
-	2023-12-10
+	2023-12-18
 
 [VERSION HISTORY](./CHANGELOG.md)
 
@@ -16,11 +16,7 @@
 2. [Overall Description](#2-overall-description) 
    1. [Product Perspective ](#21product-perspective) 
    2. [Product Functions ](#22product-functions) 
-   3. [User Classes and Characteristics ](#23user-classes-and-characteristics) 
-   4. [Operating Environment ](#24operating-environment) 
-   5. [Design and Implementation Constraints ](#25design-and-implementation-constraints) 
-   6. [User Documentation ](#26user-documentation) 
-   7. [Assumptions and Dependencies](#27assumptions-and-dependencies) 
+   3. [User Classes and Characteristics ](#23user-classes-and-characteristics)
 3. [External Interface Requirements](#3-external-interface-requirements) 
    1. [User Interfaces](#31user-interfaces) 
    2. [Hardware Interfaces](#32hardware-interfaces) 
@@ -36,14 +32,7 @@
 5. [Other Nonfunctional Requirements](#5-other-nonfunctional-requirements )  
    1. [Performance Requirements](#51performance-requirements) 
    2. [Safety Requirements](#52safety-requirements) 
-   3. [Security Requirements](#53security-requirements) 
-   4. [Software Quality Attributes](#54software-quality-attributes ) 
-   5. [Business Rules](#55business-rules)
-6. [Appendix](#6-other-requirements) 
-    
-       A. Glossary 
-       B. Analysis Models 
-       C. To Be Determined List
+   3. [Security Requirements](#53security-requirements)
 			
 
 ## 1. Introduction
@@ -51,7 +40,7 @@
 ### 1.1	Purpose
 This document covers the requirement documentation patterns and practices follow by the PORE team. It aims to concisely explain the requirements of the quality assurance team and their scope in the product delivery pipeline.
 ### 1.2	Document Conventions
-All requirements in the r
+All requirements are 
 ### 1.3	Intended Audience and Reading Suggestions
 <Describe the different types of reader that the document is intended for, such as developers, project managers, marketing staff, users, testers, and documentation writers. Describe what the rest of this SRS contains and how it is organized. Suggest a sequence for reading the document, beginning with the overview sections and proceeding through the sections that are most pertinent to each reader type.>
 ### 1.4	Product Scope
@@ -69,15 +58,7 @@ The product has 3 major functions:
 3. It will also offer users the ability to track their progress
 ### 2.3	User Classes and Characteristics
 1. Normal User: any user that is able to book appoint
-2. Consultant: will be able to 
-### 2.4	Operating Environment
-<Describe the environment in which the software will operate, including the hardware platform, operating system and versions, and any other software components or applications with which it must peacefully coexist.>
-### 2.5	Design and Implementation Constraints
-<Describe any items or issues that will limit the options available to the developers. These might include: corporate or regulatory policies; hardware limitations (timing requirements, memory requirements); interfaces to other applications; specific technologies, tools, and databases to be used; parallel operations; language requirements; communications protocols; security considerations; design conventions or programming standards (for example, if the customer’s organization will be responsible for maintaining the delivered software).>
-### 2.6	User Documentation
-<List the user documentation components (such as user manuals, on-line help, and tutorials) that will be delivered along with the software. Identify any known user documentation delivery formats or standards.>
-### 2.7	Assumptions and Dependencies
-<List any assumed factors (as opposed to known facts) that could affect the requirements stated in the SRS. These could include third-party or commercial components that you plan to use, issues around the development or operating environment, or constraints. The project could be affected if these assumptions are incorrect, are not shared, or change. Also identify any dependencies the project has on external factors, such as software components that you intend to reuse from another project, unless they are already documented elsewhere (for example, in the vision and scope document or the project plan).>
+2. Consultant: will be able to onboard onto the app, interface with users and provide advice and recommendations on their skin care routines
 
 ## 3. External Interface Requirements
 ### 3.1	User Interfaces
@@ -444,18 +425,3 @@ Then the application should return the user to the main screen without saving th
 <Specify those requirements that are concerned with possible loss, damage, or harm that could result from the use of the product. Define any safeguards or actions that must be taken, as well as actions that must be prevented. Refer to any external policies or regulations that state safety issues that affect the product’s design or use. Define any safety certifications that must be satisfied.>
 ### 5.3	Security Requirements
 <Specify any requirements regarding security or privacy issues surrounding use of the product or protection of the data used or created by the product. Define any user identity authentication requirements. Refer to any external policies or regulations containing security issues that affect the product. Define any security or privacy certifications that must be satisfied.>
-
-### 5.4	Software Quality Attributes
-<Specify any additional quality characteristics for the product that will be important to either the customers or the developers. Some to consider are: adaptability, availability, correctness, flexibility, interoperability, maintainability, portability, reliability, reusability, robustness, testability, and usability. Write these to be specific, quantitative, and verifiable when possible. At the least, clarify the relative preferences for various attributes, such as ease of use over ease of learning.>
-### 5.5	Business Rules
-<List any operating principles about the product, such as which individuals or roles can perform which functions under specific circumstances. These are not functional requirements in themselves, but they may imply certain functional requirements to enforce the rules.>
-
-## 6. Other Requirements
-<Define any other requirements not covered elsewhere in the SRS. This might include database requirements, internationalization requirements, legal requirements, reuse objectives for the project, and so on. Add any new sections that are pertinent to the project.>
-Appendix A: Glossary
-<Define all the terms necessary to properly interpret the SRS, including acronyms and abbreviations. You may wish to build a separate glossary that spans multiple projects or the entire organization, and just include terms specific to a single project in each SRS.>
-Appendix B: Analysis Models
-<Optionally, include any pertinent analysis models, such as data flow diagrams, class diagrams, state-transition diagrams, or entity-relationship diagrams.>
-Appendix C: To Be Determined List
-<Collect a numbered list of the TBD (to be determined) references that remain in the SRS so they can be tracked to closure.>
-
