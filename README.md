@@ -25,4 +25,3 @@ The application will allow the consumer/user to use the integrated facial recogn
    - Documentation guidelines
    - Collabaration guidelines, and of course
    - Testing guidelines
-   - 
