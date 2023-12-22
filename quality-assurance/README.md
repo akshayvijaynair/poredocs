@@ -54,35 +54,35 @@ Quality Assurance plays a pivotal role in ensuring the reliability, functionalit
 - Outline the testing levels (unit, integration, system, acceptance).
 
 ## III. Testing Scope
-### i) Unit Testing for Beauty Features:
-Developers write XCTest unit tests to validate specific functions, such as beauty filter algorithms or image processing for makeup applications.
+### i) Unit Testing for skin Features:
+Developers write XCTest unit tests to validate specific functions, such as skin filter algorithms or image processing for skin analysis.
 
-### ii) UI Testing for Beauty UI Elements:
-XCUITest scripts simulate user interactions with beauty-specific UI elements, ensuring they respond appropriately and maintain visual integrity.
+### ii) UI Testing for skin UI Elements:
+XCUITest scripts simulate user interactions with skin-specific UI elements, ensuring they respond appropriately and maintain visual integrity.
 
 ### iii) Visual Regression Testing for Aesthetics:
-Employ visual regression testing tools to capture baseline aesthetics and detect unintended visual changes in beauty filters or interface elements.
+Employ visual regression testing tools to capture baseline aesthetics and detect unintended visual changes in skin or interface elements.
 
 ### iv) Performance Testing for Image Processing:
-Use Xcode Instruments to profile performance, focusing on optimizing image processing speed for beauty enhancements.
+Use Xcode Instruments to profile performance, focusing on optimizing image processing speed for skin tracking and analysis.
 
 ### v) Accessibility Testing for Inclusivity:
-Leverage the Accessibility Inspector to guarantee that beauty features are accessible to all users, including those relying on accessibility features.
+Leverage the Accessibility Inspector to guarantee that skin application features are accessible to all users, including those relying on accessibility features.
 
-### vi) Continuous Integration with Beauty Focus:
-Integrate Fastlane into the CI/CD pipeline, automating tests for beauty features to maintain consistency and reliability across different builds.
+### vi) Continuous Integration with skin Focus:
+Integrate Fastlane into the CI/CD pipeline, automating tests for skin features to maintain consistency and reliability across different builds.
 
 ### vii) Beta Testing for Real-World Evaluation:
-Fastlane facilitates beta releases, allowing testers to evaluate beauty features like augmented reality makeup or skincare simulations in diverse real-world scenarios.
+Fastlane facilitates beta releases, allowing testers to evaluate skin features like augmented reality makeup or skincare simulations in diverse real-world scenarios.
 
 ### viii) End-to-End Testing for User Journeys:
-Design end-to-end testing scenarios that span the complete user journey, ensuring beauty features work seamlessly across different screens and user interactions.
+Design end-to-end testing scenarios that span the complete user journey, ensuring application features work seamlessly across different screens and user interactions.
 
 ### ix) User Feedback Integration for Iterative Improvement:
-Implement analytics tools to collect user feedback on beauty features, informing iterative improvements for an enhanced user experience.
+Implement analytics tools to collect user feedback on Pore's features, informing iterative improvements for an enhanced user experience.
 
 ### x) Final Release Assurance:
-Prior to the final release, employ Fastlane to automate the deployment process, conducting a final round of tests to ensure the beauty application is ready for public access with high-quality aesthetics and functionality.
+Prior to the final release, employ Fastlane to automate the deployment process, conducting a final round of tests to ensure the skin application is ready for public access with high-quality aesthetics and functionality.
 
 
 ## IV. Test Environment
@@ -95,13 +95,13 @@ Prior to the final release, employ Fastlane to automate the deployment process, 
 
 ## V. Test Tooling
 ### 1. Xcode:
-Xcode serves as the central hub for iOS beauty application development and testing. Developers utilize its Interface Builder to craft visually captivating user interfaces for beauty features. During testing, Xcode's simulator allows for real-time validation of UI responsiveness and aesthetics across various iOS devices, ensuring a seamless user experience.
+Xcode serves as the central hub for iOS skin application development and testing. Developers utilize its Interface Builder to craft visually captivating user interfaces for skin features. During testing, Xcode's simulator allows for real-time validation of UI responsiveness and aesthetics across various iOS devices, ensuring a seamless user experience.
 
 ### 2. XCTest/XCUITest:
-XCTest is harnessed for writing unit tests, scrutinizing the functionality of specific code segments in the beauty app. Meanwhile, XCUITest extends testing to the UI, where automated scripts simulate user interactions—critical for assessing the correct implementation of beauty-centric features, such as virtual makeup or skin tone adjustments.
+XCTest is harnessed for writing unit tests, scrutinizing the functionality of specific code segments in the skin app. Meanwhile, XCUITest extends testing to the UI, where automated scripts simulate user interactions—critical for assessing the correct implementation of skin-centric features, such as diagnosis and skin health.
 
 ### 3. Fastlane:
-Fastlane streamlines the testing and deployment processes for beauty applications. It automates repetitive tasks, ensuring that the app's aesthetics and features remain intact throughout the testing pipeline. Fastlane's integrations facilitate beta testing, allowing stakeholders to evaluate beauty features in a real-world environment before the final release.
+Fastlane streamlines the testing and deployment processes for skin applications. It automates repetitive tasks, ensuring that the app's aesthetics and features remain intact throughout the testing pipeline. Fastlane's integrations facilitate beta testing, allowing stakeholders to evaluate skin features in a real-world environment before the final release.
 
 Additional details can be found here:[testing and tooling page](/TESTING_AND_TOOLING.md)
 
