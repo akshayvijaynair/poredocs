@@ -7,11 +7,11 @@ While not a direct testing component of Fastlane, it does play a role in automat
 While not directly integrated with Fastlane, tools such as Charles Proxy or Gatling supplement its capabilities by simulating various network conditions and stress-testing the app. These tools automate the examination of the app's performance under various loads and network speeds, revealing potential bottlenecks or areas for improvement.
 
 ## Deployment Automation:
-Fastlane specializes in automating the deployment workflow, ensuring that the beauty app passes several tests and validations before being distributed to users. Fastlane automates build processes, performs tests, and enables seamless deployment to the App Store by integrating with CI/CD methods, shortening the release cycle while retaining app quality.
+Fastlane specializes in automating the deployment workflow, ensuring that the skin app passes several tests and validations before being distributed to users. Fastlane automates build processes, performs tests, and enables seamless deployment to the App Store by integrating with CI/CD methods, shortening the release cycle while retaining app quality.
 
 # Introduction:
 
-**Objective:** Ensure the stability, scalability, and reliability of the platform and infrastructure supporting the ISO beauty application.
+**Objective:** Ensure the stability, scalability, and reliability of the platform and infrastructure supporting the ISO skin application.
 
 **Scope:** Cover aspects such as server configuration, deployment processes, and compatibility with the underlying technology stack.
 
