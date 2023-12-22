@@ -6,7 +6,7 @@ It is vital for the app's functionality to ensure the integrity of data containe
 
 ## Data Migration Testing:
 
-When introducing updates or changes to the database structure, automated tests can be put up to guarantee that data migration operations run smoothly and without damaging current data. This ensures that the beauty app's functionality and user data integrity are preserved even after updates or migrations.
+When introducing updates or changes to the database structure, automated tests can be put up to guarantee that data migration operations run smoothly and without damaging current data. This ensures that the skin app's functionality and user data integrity are preserved even after updates or migrations.
 
 ## Tools Used:
 
