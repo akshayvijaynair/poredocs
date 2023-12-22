@@ -135,6 +135,8 @@ Additional details can be found here:[testing and tooling page](/TESTING_AND_TOO
 - All project goals should have predefined goals and deadlines marked out
 ![image](../assets/images/Gantt%20Chart.png)
 
+- Detailed documentation on the collaboration guidelines can be found here - [Collaboration guidelines](./COMMUNICATION_GUIDELINES.md)
+
 ## X. Scaling Efforts
 - Provide guidelines for onboarding new team members - 
   - All hiring and team member expectations are defined here: [Project Roles](/ROLES.md)
