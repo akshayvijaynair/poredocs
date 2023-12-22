@@ -28,17 +28,30 @@ The iOS skincare application is designed to revolutionize users' skincare routin
 The primary target audience includes individuals seeking personalized skincare solutions, guidance from professionals, and convenient access to curated skincare products.
 
 ### Key Features
-1. **Image Analysis:**
-    - Analyze user-uploaded photos for various skincare issues.
-    - Provide detailed reports on identified concerns.
+1. **Skin Analysis and Survey:**
+    - A face-scanning API which is able to generate information regarding skin health and problems the user may have.
+    - In depth survey to help generate product recommendations and routines to achieve skin goals e.g., removing dark circles.
+    - Survey will also be pushed to the consultant for meetings at the request of the user to streamline the process. 
 
-2. **Professional Consultation:**
-    - Connect users with skincare professionals for personalized advice.
-    - Enable real-time communication and consultation within the app.
+2. **Personalised Routines:**
+    - With the face-scan data and information from the survey the application will be able to adjust products into a professional routine to improve the user's skin and meet there personal goals in a efficient manner.
 
-3. **Marketplace:**
-    - Curate a marketplace offering skincare products aligned with users' analysis and recommendations.
-    - Seamless integration for users to make informed purchases.
+3. **Product Matching:**
+    - The application, using data from the survey and face analysis, will be able to recommend products that meet the needs of the user and compliments there skin. This way faster improvements can be seen and tracked.
+      
+4. **Consultants and Education**
+    - User will be able to find nearby consultants and book meetings.
+    - The survey can be sent to the consultant via the user.
+    - The user will be able to read our blogs and information slides to understand products, skin amd usage better. 
+      
+5. **Routine Tracking and Mointoring**
+    - The user can upload bi-weekly photos that will be stored in the progress timeline section of the app.
+    - The customer can compare new and old photos and visually see the changes in the skin
+    - They will also recieve a diagnosis log summarising their progress thus far.
+
+6. **Marketplace**
+    - The user can benefit from the Pore marketplace, consisting of all necessary skin products to tackle their skin needs and meet their goals.
+    - User will be able to purchase through the Pore application. 
 
 ## Importance of Quality Assurance
 Quality Assurance plays a pivotal role in ensuring the reliability, functionality, and security of the iOS skincare application. By implementing robust QA processes, we aim to deliver a high-quality user experience, building trust and satisfaction among our user base.
